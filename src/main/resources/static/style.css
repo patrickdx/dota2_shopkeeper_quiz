@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica;
+}
+
+body{
+	background-color: #111;
+
+}
+
+center{
+	text-align: -webkit-center;
+
+}
+
+#itemsContainer{
+	position: relative;
+}
+
+#bodyContainer{
+	width: 1200px;
+    height: 1100px;
+  	background: url("bg_quiz.jpg") top center no-repeat;
+  
+}
+
+#mainContent {
+	width:  664px;
+	height: 362px;
+	box-shadow: 0 0 64px #000;
+	position:  relative;
+	top: 425px;
+	text-align: center;
+
+}
+#game{
+		background: url("keeper.png");
+		width:  664px;
+		height: 362px;
+}
+#background{
+	width:  664px;
+	height: 362px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: url("keeper.png");
+	filter: brightness(40%);
+}
+
+footer a{
+	float: right; 
+	margin: 10px; 
+	color:red;
+}
+canvas{
+-webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+        
+}
+
+.item{
+	width: 0;
+	height: 0;
+}
+	img{
+
+
+	position: absolute;
+	width: 50px;
+	height: 32px;
+	border: 1.3px solid rgb(92,90,99);
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px black;
+
+       
+	
+}
+
+@keyframes move {
+   from {top: 0px;}
+  to {top: 200px;}
+}
+
+
+
+img,p{
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+	
+
+}
+#info{
+	width: 200px;
+	color: white;
+	top: 235px;
+	margin: 0 auto;
+	position:  relative;
+}
+
+button{
+	  width:  98px;
+	  height: 32px;
+		
+	  background: rgb(83,83, 83);
+	  border: none;
+	  color: white;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  top: 55px;
+	  left: 35%;
+	  cursor: pointer;
+	  position: absolute;
+	  
+}
+
+#message{
+
+	/*to prevent multiple messages from interfering with each other (when click fast)*/
+    position: absolute;
+	
+	font-size: 28px;
+  top: 110px;
+  left: 0; 
+  right: 0px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 250px; /* width >0 */
+   
+}
+
+#message.animated{
+	 animation: floatup 1.2s forwards;
+
+
+}
+
+@keyframes floatup{
+	 from {transform: translateY(-10px); opacity: 100%;}
+  to {transform: translateY(-40px); opacity:  0%;}
+}
+
+
+
+
+/* tooltip styling */
+
+
+.tooltip {
+    display:inline-block;
+    position:relative;
+    border-bottom:1px dotted #666;
+    text-align:left;
+}
+
+
+.tooltip .bottom {
+
+   min-width:200px;
+    
+    top:32px;
+    left:25px;
+    transform:translate(-50%, 0);
+    padding:8px 8px;
+    color:#FFD700;
+
+/*some kind of god of war gradient*/
+background: rgb(54,58,60); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(54,58,60,1) 1%, rgba(31,30,31,1) 4%, rgba(31,30,31,1) 96%, rgba(54,58,60,1) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(54,58,60,1) 1%,rgba(31,30,31,1) 4%,rgba(31,30,31,1) 96%,rgba(54,58,60,1) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(54,58,60,1) 1%,rgba(31,30,31,1) 4%,rgba(31,30,31,1) 96%,rgba(54,58,60,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:10;
+    box-sizing:border-box;
+   /* border:1px solid grey;*/
+    box-shadow:1px 1px 8px black;
+    visibility:hidden; opacity:0; transition:opacity 0.2s;
+
+   
+}
+
+
+.item:hover .tooltip .bottom{
+
+	 visibility:visible; opacity:1;
+    transition-delay: 0.7s; 
+   
+    
+ }
+
+.tooltip .bottom i {
+    position:absolute;
+    bottom:100%;
+    left:50%;
+    margin-left:-12px;
+    width:24px;
+    height:12px;
+    overflow:hidden;
+}
+/*triangle part of tooltip*/
+.tooltip .bottom i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:50%;
+    transform:translate(-50%,50%) rotate(45deg);
+    background-color:#1F1E1F;
+
+    box-shadow:0 1px 8px transparent;
+    
+    
+    
+ 
+}
+
+
