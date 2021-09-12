@@ -18,7 +18,7 @@ function requestItem(){
   dataType: "json",
   url: "https://dota2-quiz.herokuapp.com/randomItem",
   success: function(result){
-   $("#spinner").remove();
+   
    item = result;
 
    itemComponents = result.components.slice();
@@ -52,7 +52,7 @@ function setupGame(){
 
 function showGame(){
  
-
+$("#spinner").remove();
   // wait for animation to end before displaying next round, if animation has already passed before it reaches this line, just continue.      
   // animation already done
     if ($("#message").length == 0 || animated == null){
