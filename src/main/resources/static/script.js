@@ -18,7 +18,7 @@ function requestItem(){
   dataType: "json",
   url: "https://dota2-quiz.herokuapp.com/randomItem",
   success: function(result){
-   
+   $("#spinner").remove();
    item = result;
 
    itemComponents = result.components.slice();
