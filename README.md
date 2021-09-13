@@ -24,4 +24,8 @@ Dota 2 gets frequent updates that may change the items (item stats/new item). To
 - Learned Jsoup, (java web scraper), dom traversal, and css selectors
 - some java practice in lambdas and streams, regex
 
+## side by side comparison
 
+real one on left, remake on right.
+
+![](https://github.com/patrickdx/dota2_shopkeeper_quiz/blob/main/dota2gameplay.gif)
