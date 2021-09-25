@@ -7,7 +7,7 @@ My goal was to make the quiz as visually identical as possible, and fixing bugs 
 
 Since the orignal game code is unretrievable, I had to do everything (visuals, animations, timings, logic) myself,  heavily relying on the reference above. 
 
-Play it here: https://dota2-quiz.herokuapp.com/
+Play it here: https://dota2-quiz.herokuapp.com/ (site may take a while first to load)
 
 ## implementation
 
