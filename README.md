@@ -23,6 +23,7 @@ Dota 2 gets frequent updates that may change the items (item stats/new item). To
 - got better in client side languages that I rarely use. (HTML, CS, JS)
 - Learned Jsoup, (java web scraper), dom traversal, and css selectors
 - some java practice in lambdas and streams, regex
+- transfer object back and forth client and server, using serialization/deserialization
 
 ## side by side comparison
 
